@@ -1,0 +1,475 @@
+@font-face {
+    font-family: 'Aeonik';
+    src: url('../font/Aeonik-Bold.ttf') format('ttf'),
+         url('../font/Aeonik-Regular.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: Aeonik-Regular, Aeonik;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #181720;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Header Styles */
+header {
+    background: rgba(255, 255, 255, 0.16);
+    padding: 16px 10px 16px 24px; 
+    margin-top: 32px;
+    border-radius: 40px;
+    max-width: 580px;
+    margin-left: auto;
+    margin-right: auto;
+    backdrop-filter: blur(20px); /* Background blur effect */
+    -webkit-backdrop-filter: blur(20px); /* Safari support */
+    position: sticky; 
+    top: 16px; 
+    z-index: 1000; 
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo img {
+    max-height: 40px;
+}
+
+.menu {
+    margin: 0px;
+    color: white;
+}
+
+header .menu a {
+    margin-left: 16px;
+    font-size: 20px;
+}
+
+header .menu .cta {
+    background: #060606;
+    padding: 12px 24px;
+    border-radius: 25px;
+}
+
+
+.hero {
+    background: #314692;
+    color: white;
+    padding: 180px 20px 80px 20px;
+    text-align: center;
+    margin-top: -120px;
+}
+
+.hero .hero-content {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 74px;
+}
+
+.hero h1 {
+    font-family: Aeonik-Bold, Aeonik;
+    font-size: 64px;
+    line-height: 72px;
+    margin-bottom: 20px;
+}
+
+.hero h1 .highlight {
+    color: #FFC700;
+}
+
+.cta {
+    font-family: Aeonik-Bold, Aeonik;
+    background: #EBEFFF;
+    padding: 16px 32px;
+    border-radius: 40px;
+    color: #526ED3;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.cta:hover {
+    background: #CDD4EF;
+}
+
+.hero .hero-image {
+    margin-top: 20px;
+}
+
+.hero .hero-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.hero .hero-content .margin-top {
+    margin-top: 0px;
+}
+
+
+.hero-actions {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Space between action-group and cta */
+}
+
+/* Responsive spacing for larger screens */
+@media (min-width: 768px) {
+    .hero-actions {
+        gap: 24px; /* Increase space for tablets and larger screens */
+    }
+}
+
+@media (min-width: 1024px) {
+    .hero-actions {
+        gap: 80px; /* Further increase space for desktops */
+    }
+}
+
+.action-group {
+    display: flex;
+    gap: 10px; /* Space between each action button */
+}
+
+.action {
+    background: rgb(121, 178, 230, 0.24);
+    border: 2px dashed rgb(255, 255, 255, 0.24);
+    color: #fff;
+    padding: 16px 24px;
+    border-radius: 40px;
+    text-align: center;
+    font-size: 1.2em;
+    white-space: nowrap; /* Ensure text doesn't wrap */
+}
+
+.alert {
+    display: flex;
+    align-items: center;
+    background: #fff9db;
+    color: #333;
+    padding: 8px 16px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    gap: 8px;
+}
+
+.alert-text {
+    font-size: .875rem;
+}
+
+.alert-text strong {
+    font-weight: bold;
+    padding-right: 4px;
+}
+
+.about {
+    max-width: 980px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 74px;
+    gap: 0px;
+}
+
+.about .about_title {
+    font-size: 3rem;
+    line-height: 48px;
+    margin-top: 120px;
+    margin-bottom: 24px;
+}
+
+.about .about_description {
+    font-family: Aeonik-Regular, Aeonik;
+    font-size: 20px;
+    line-height: 32px;
+}
+
+.for_teams {
+    flex-direction: row;
+    max-width: 480px;
+    margin-bottom: 74px;
+    gap: 24px;
+}
+
+.two-column {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Space between columns */
+    max-width: 1200px;
+    width: 100%;
+    padding: 20px;
+}
+
+.column {
+    flex: 1; /* Each column takes up equal space */
+    
+}
+
+.left-column {
+    text-align: left;
+    gap: 1.5rem;
+}
+
+.right-column {
+    background: #ece4ff00;
+}
+
+.blue_highlight {
+    color: #A0B5FF;
+}
+
+.user_title {
+    font-size: 60px;
+    line-height: 0px;
+}
+
+.about_description {
+    font-family: Aeonik-Regular, Aeonik;
+    font-size: 20px;
+    line-height: 32px;
+}
+
+.plain_button {
+    font-size: 20px;
+}
+
+.plain_button:hover {
+    color: #CDD4EF;
+    transition: background 0.5s ease;
+}
+
+.offerings {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 120px;
+    margin-bottom: 120px;
+    gap: 0px;
+}
+
+.offer_container {
+    gap: 40px;
+}
+
+.offer_title {
+    font-family: Aeonik-Regular, Aeonik;
+    color: #ffffff;
+    font-size: 48px;
+    margin: 0px !important;
+    padding-bottom: 2.5rem;
+}
+
+.offer {
+    font-family: Aeonik-Bold, Aeonik;
+    font-size: 96px;
+    color: #AEAEAE;
+    margin: 0px !important;
+    padding-bottom: 16px;
+    padding-right: 5rem;
+}
+
+.offer:hover {
+    color: #AADC42;
+    transition: background 0.5s ease;
+}
+
+.offer_description {
+    font-size: 1rem;
+    color: #ffffff;  
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+.offer_group {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.offer_group:hover .offer_description {
+    opacity: 1; /* Show on hover */
+}
+
+.why-planiphy {
+    background: #000000;
+    padding-top: 80px;
+    padding-bottom: 120px;
+}
+
+.why-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 120px;
+    gap: 0px;
+}
+
+.why-caption {
+    font-size: 60px;
+    line-height: 0px;
+    color: #ffffff;
+    line-height: 80px;
+    margin-top: 0px;
+}
+
+.why-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px; 
+    max-width: 25%;
+}
+
+.why-title {
+    font-family: Aeonik-Bold, Aeonik;
+    color: #ffffff;
+    font-size: 20px;
+    margin: 0px !important;
+}
+
+.why-icon {
+    width: 32px;
+    height: 32px;
+}
+
+.why-text {
+    color: #ffffff;
+    font-size: 14px;
+    margin: 0px !important;
+    line-height: 20px;
+}
+
+.why-group {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 40px;
+}
+
+.final_message {
+    background: #526ED3;
+    color: white;
+    padding: 80px 20px 80px 20px;
+    text-align: center;
+    margin-top: -120px;
+}
+
+
+.final_message_content {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.final_title {
+    font-size: 3rem;
+    line-height: 56px;
+    margin-bottom: 24px;
+    margin-top: 0px;
+}
+
+.final_message .content {
+    max-width: 515px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 20px;
+    line-height: 32px;
+}
+
+.final-actions {
+    display: flex;
+    align-items: center;
+    gap: 1rem; /* Space between action-group and cta */
+}
+
+.cta_secondary {
+    background: rgb(121, 178, 230, 0.24);
+    border: 2px solid rgb(255, 255, 255, 0.6);
+    color: #fff;
+    padding: 14px 24px;
+    border-radius: 40px;
+    text-align: center;
+    font-size: 20px;
+    white-space: nowrap; /* Ensure text doesn't wrap */
+    font-family: Aeonik-Bold, Aeonik;
+}
+
+.footer {
+    background: #314692;
+    color: white;
+    padding: 80px 20px 16px 20px;
+}
+
+.footer-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    align-items: center;
+}
+
+.footer-about {
+    display: flex;
+    flex-direction: column;
+    gap: 16px; 
+    max-width: 30%;
+
+}
+
+.footer-logo {
+    width: 131px;
+}
+
+.footer-group {
+    margin: 0 auto;
+    display: flex;
+    width: 100%;
+    gap: 40px;
+    justify-content: space-between;
+}
+
+.copyright {
+    font-size: .75rem;
+    color: #ffffff;
+}
+
+.red-arrow {
+    position: absolute;
+    right: auto;
+    top: 50%;
+    transform: translateY(-155%) translateX(830px);
+    height: auto;
+}
+
+.ding {
+    position: absolute;
+    right: auto;
+    top: 50%;
+    transform: translateY(45%) translateX(-60px);
+    height: auto;
+}
